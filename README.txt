@@ -1,4 +1,4 @@
-This is an example about how to export qlikview chart to excel and send it by email all with python.
+This is an example about how to export qlikview chart to excel and send it by email using python.
 
 How to use:
 Make a new qlikview file qvw and name it PyQlikSender.qvw.
