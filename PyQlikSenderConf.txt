@@ -1,0 +1,9 @@
+[configuration]
+QLIKVIEW_DOCUMENT=PyQlikSender.qvw
+SMTP_ADDRESS= 	
+SMTP_PORT=465
+EMAIL_FROM= 
+EMAIL_LOGIN= 
+EMAIL_PASSWORD=radioportale2009
+LOGFILE=PyQlikSenderLog.txt
+QVRELOAD=Y

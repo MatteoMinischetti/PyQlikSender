@@ -1,0 +1,40 @@
+﻿///$tab Main
+SET ThousandSep='.';
+SET DecimalSep=',';
+SET MoneyThousandSep='.';
+SET MoneyDecimalSep=',';
+SET MoneyFormat='#.##0,00 €;-#.##0,00 €';
+SET TimeFormat='hh:mm:ss';
+SET DateFormat='DD/MM/YYYY';
+SET TimestampFormat='DD/MM/YYYY hh:mm:ss[.fff]';
+SET FirstWeekDay=0;
+SET BrokenWeeks=0;
+SET ReferenceDay=4;
+SET FirstMonthOfYear=1;
+SET CollationLocale='it-IT';
+SET MonthNames='gen;feb;mar;apr;mag;giu;lug;ago;set;ott;nov;dic';
+SET LongMonthNames='gennaio;febbraio;marzo;aprile;maggio;giugno;luglio;agosto;settembre;ottobre;novembre;dicembre';
+SET DayNames='lun;mar;mer;gio;ven;sab;dom';
+SET LongDayNames='lunedì;martedì;mercoledì;giovedì;venerdì;sabato;domenica';
+
+emails:
+LOAD * INLINE [
+    Title, Name, Surname, Company, Email, Field, FilterValue, Object
+    Consultant, Matteo, Minischetti, Cyborg Devices, my.email@gmail.com, region, puglia, TB01
+    Miss, Ornella, Tre, Cloning Devices, other.email@me.com, type, sea, TB01
+];
+
+
+places:
+LOAD * INLINE [
+    type, city, region
+    sea, Peschici, Puglia
+    sea, Gagliano del capo, Puglia
+    mountain, Lurisia, Piemonte
+    mountain, Chamonix, "Valle d'aosta"
+    sea, Alassio, Liguria
+    sea, Elba, Toscana
+    sea, Capri, Campania
+    mountain, Cervinia, "Valle d'aosta"
+];
+
