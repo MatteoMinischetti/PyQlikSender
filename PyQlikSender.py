@@ -69,7 +69,7 @@ def manage_document(docname, current_path, tb_email):
     print(version)
     doc = q.opendoc(docname, username, password)
     if QVRELOAD == 'Y':
-        q.reload(docname)
+        q.reload(doc)
     email_table = doc.GetSheetObject(tb_email)  # the object table containing email to send and filter to apply
     today_date = str(datetime.today().date()).replace('-', '_')
     rowiter = 0
